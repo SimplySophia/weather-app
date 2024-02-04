@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=League+Spartan:wght@400;500;700&family=Nunito:wght@400;500;700&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    background-color: #006eff;
+    padding: 5rem;
+    margin: auto;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.search-btn{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    position: relative;
+}
+.search-btn input{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 280px;
+    height: 50px;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+}
+.search-btn a{
+    background-color: #fff;
+    width: 50px;
+    border-radius: 50px;
+    position: relative;
+    
+}
+.search-btn img{
+    max-width: 25px;
+    align-items: center;
+    position: absolute;
+    inset: 0.8rem 0.6rem 0.5rem 0.9rem;
+}
+.error{
+    margin: -1.5rem 1rem;
+    color: #FFD43B;
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: none;
+}
+.weather-condition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weather-condition img{
+    max-width: 150px;
+    border-radius: 50%;
+}
+.weather-condition .deg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    margin: auto;
+}
+.weather-condition h4{
+    font-size: 4rem;
+}
+.weather-condition span{
+    font-size: 2.5rem;
+    margin: -0.8rem 0;
+}
+.weather-variation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3rem;
+}
+.humidity, .wind{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+}
+.humidity img, .wind img{
+    color: #fff;
+    max-width: 50px;
+}
+.humidity .per, .wind .kilo{
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 428px) {
+    body {
+        width: 100%;
+    }
+
+    .container {
+        padding: 2rem; 
+    }
+
+    .search-btn input {
+        width: 100%;
+    }
+
+    .search-btn a {
+        width: 60px;
+        height: 45px;
+        margin: auto;
+    }
+
+    .weather-condition h4 {
+        font-size: 2rem;
+    }
+
+    .weather-condition span {
+        font-size: 1.5rem;
+    }
+}
+
