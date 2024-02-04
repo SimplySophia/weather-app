@@ -2,6 +2,7 @@
 const searchInput = document.querySelector('.search-btn input');
 const searchIcon = document.querySelector('.search-btn a');
 
+
 // function to fetch weather information based on the provided city
 async function getWeather(city) {
     // fetching weather data from the OpenWeatherMap API
@@ -27,6 +28,8 @@ async function getWeather(city) {
     document.querySelector('.city').innerHTML = data.name;
     document.querySelector('.humidityp').innerHTML = data.main.humidity + "%";
     document.querySelector('.windp').innerHTML = Math.round(data.wind.speed) + "k/h";
+
+    
 }
 
 // adding a click event listener to the search icon
